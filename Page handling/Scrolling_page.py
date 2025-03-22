@@ -29,7 +29,7 @@ async def authenticate(page):
     await page.goto(LOGIN_URL)
     await page.wait_for_load_state("domcontentloaded")
     await page.fill("#email", "Enter Email ID")  
-    await page.fill("#password", "ENter Password") 
+    await page.fill("#password", "Enter Password") 
     await page.click("button[type='submit']")
     
     # Wait for the dashboard to load

@@ -28,8 +28,8 @@ async def authenticate(page):
     """Logs into the application if no session exists."""
     await page.goto(LOGIN_URL)
     await page.wait_for_load_state("domcontentloaded")
-    await page.fill("#email", "akash.a@cmr.edu.in")  # Replace with your email
-    await page.fill("#password", "4NR2p0V2")  # Replace with your password
+    await page.fill("#email", "Enter email") 
+    await page.fill("#password", "Enter Password") 
     await page.click("button[type='submit']")
     
     # Wait for the dashboard to load
